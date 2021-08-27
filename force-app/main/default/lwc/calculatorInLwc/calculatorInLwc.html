@@ -2,7 +2,7 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 08-25-2021
+  @last modified on  : 08-26-2021
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
@@ -23,8 +23,13 @@
     ></lightning-input>
   </div>
   <div class="slds-box slds-theme_shade">
-    <b>Output value is : </b>
-    <P>{resultValue}</P>
+    <lightning-input
+      type="number"
+      name="Output"
+      label="Output value is : "
+      disabled="true"
+      value={resultValue}
+    ></lightning-input>
   </div>
   <div class="slds-box slds-theme_shade">
     <lightning-button title="Addition" label="Addition" onclick={addition}>

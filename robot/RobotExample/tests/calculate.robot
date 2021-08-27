@@ -53,10 +53,8 @@ Via UI
 
 
 *** Keywords ***
-
-
-
     # Validate via UI
     Select App Launcher App            LWCcalculator
+    Page Should Contain     10
     
 
